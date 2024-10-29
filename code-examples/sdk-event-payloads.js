@@ -419,3 +419,120 @@ const notificationReceivedPayload = {
     userLocalTimestamp: "2020-01-01T00:00:00.000Z",
   },
 };
+
+const userFileUploadsStartedPayload = {
+  eventName: "user-file-uploads-started",
+  analyticsEvent: "user-file-uploads-started",
+  id: "event_123",
+  endUserId: "user_123",
+  timestamp: "2020-01-01T00:00:00.000Z",
+  eventContext: {
+    userLocalTimestamp: "2020-01-01T00:00:00.000Z",
+  },
+  properties: {
+    path: "example/api/path",
+    statusCode: 500,
+  },
+  sdkContext: {
+    containerId: "container_123",
+  },
+  cardContext: {
+    cardInstanceId: "card_123",
+  },
+    streamContext: {
+    streamLength: 5,
+    streamLengthVisible: 3,
+    cardPositionInStream: 1,
+  },
+  properties: {
+    subviewId: "subview_123",
+    subviewTitle: "Example Subview Title",
+    subviewLevel: 1,
+    upload_field123: {
+      filename: "filename_in_S3_bucket.png",
+      targetBucketId: "S3_bucket_id"
+    },
+    upload_field456: {
+      filename: "filename_in_S3_bucket.png",
+      targetBucketId: "S3_bucket_id"
+    }
+  }
+};
+
+const userFileUploadsCompletedPayload = {
+  eventName: "user-file-uploads-completed",
+  analyticsEvent: "user-file-uploads-completed",
+  id: "event_123",
+  endUserId: "user_123",
+  timestamp: "2020-01-01T00:00:00.000Z",
+  eventContext: {
+    userLocalTimestamp: "2020-01-01T00:00:00.000Z",
+  },
+  properties: {
+    path: "example/api/path",
+    statusCode: 500,
+  },
+  sdkContext: {
+    containerId: "container_123",
+  },
+  cardContext: {
+    cardInstanceId: "card_123",
+  },
+    streamContext: {
+    streamLength: 5,
+    streamLengthVisible: 3,
+    cardPositionInStream: 1,
+  },
+  properties: {
+    subviewId: "subview_123",
+    subviewTitle: "Example Subview Title",
+    subviewLevel: 1,
+    upload_field123: {
+      filename: "filename_in_S3_bucket.png",
+      targetBucketId: "S3_bucket_id"
+    },
+    upload_field456: {
+      filename: "filename_in_S3_bucket.png",
+      targetBucketId: "S3_bucket_id"
+    }
+  }
+};
+
+const userFileUploadsFailedPayload = {
+  eventName: "user-file-uploads-failed",
+  analyticsEvent: "user-file-uploads-failed",
+  id: "event_123",
+  endUserId: "user_123",
+  timestamp: "2020-01-01T00:00:00.000Z",
+  eventContext: {
+    userLocalTimestamp: "2020-01-01T00:00:00.000Z",
+  },
+  properties: {
+    path: "example/api/path",
+    statusCode: 500,
+  },
+  sdkContext: {
+    containerId: "container_123",
+  },
+  cardContext: {
+    cardInstanceId: "card_123",
+  },
+    streamContext: {
+    streamLength: 5,
+    streamLengthVisible: 3,
+    cardPositionInStream: 1,
+  },
+  properties: {
+    subviewId: "subview_123",
+    subviewTitle: "Example Subview Title",
+    subviewLevel: 1,
+    upload_field123: {
+      filename: "filename_in_S3_bucket.png",
+      targetBucketId: "S3_bucket_id"
+    },
+    upload_field456: {
+      filename: "filename_in_S3_bucket.png",
+      targetBucketId: "S3_bucket_id"
+    }
+  }
+};
